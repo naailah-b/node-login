@@ -1,12 +1,17 @@
 body {
+    margin: 0;
+    padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    height: 100vh;
     background-color: rgb(146, 76, 237);
+    color: white;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
 }
 
 #title {
@@ -36,6 +41,17 @@ body {
     border-radius: 18px;
     width: 470px;
     height: 330px;
+}
+
+.group {
+    display: flex;
+    align-items: center;
+}
+
+#show {
+    margin-left: 4px;
+    color: rgb(145, 145, 145);
+    font-size: 14px;
 }
 
 #line {

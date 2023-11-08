@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>login extra credit</title>
 </head>
+
 <body>
-    
+    <div class="container">
         <div id="title">Login Now.</div>
         <div class="box">
             <input id="inputUser" class="input" type="text" placeholder="username">
-            <input class="input" type="text" placeholder="password">
+            <input class="input" type="password" name="password" placeholder="password">
+            <div class="group">
+                <input type="checkbox" onclick="clicked()">
+                <div id="show">show password</div>
+            </div>
             <div id="line"></div>
             <button class="btn" id="btnPost">Login</button>
         </div>
-    
+    </div>
+
 </body>
+
 </html>
