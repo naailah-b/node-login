@@ -13,9 +13,9 @@
         <div id="title">Login Now.</div>
         <div class="box">
             <input id="inputUser" class="input" type="text" placeholder="username">
-            <input class="input" type="password" name="password" placeholder="password">
+            <input class="input" id="pass" type="password" name="password" placeholder="password">
             <div class="group">
-                <input type="checkbox" onclick="clicked()">
+                <input type="checkbox" id="clicky">
                 <div id="show">show password</div>
             </div>
             <div id="line"></div>
@@ -23,6 +23,17 @@
         </div>
     </div>
 
+    <script>
+        document.getElementById('clicky').addEventListener('click', ()=> {
+            var val = document.getElementById('pass');
+            if(val.type == 'password') {
+                val.type = "text";
+            }
+            else {
+                val.type = "password";
+            }
+        });
+    </script>
 </body>
 
 </html>
