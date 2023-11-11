@@ -25,7 +25,7 @@ app.post('/', (req, res) => {
   }];
 
     if (username == 'jared' && password == 'abc123') {
-      res.sendFile(path.join(__dirname, "./page2", "matches.html"));
+      res.sendFile(path.join(__dirname, "matches.html"));
     }
   });
 
