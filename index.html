@@ -10,19 +10,21 @@
 </head>
 
 <body>
-    <div class="container">
-        <div id="title">Login Now.</div>
-        <div class="box">
-            <input id="inputUser" class="input" type="text" placeholder="username">
-            <input class="input" id="pass" type="password" name="password" placeholder="password">
-            <div class="group">
-                <input type="checkbox" id="clicky">
-                <div id="show">show password</div>
+    <form action="http://localhost:4000" method="post" name="login">
+        <div class="container">
+            <div id="title">Login.</div>
+            <div class="box">
+                <input id="user" name="user" class="input" type="text" placeholder="username">
+                <input class="input" id="pass" type="password" name="pass" placeholder="password">
+                <div class="group">
+                    <input type="checkbox" id="clicky">
+                    <div id="show">show password</div>
+                </div>
+                <div id="line"></div>
+                <button class="btn" id="btnPost">Login</button>
             </div>
-            <div id="line"></div>
-            <button class="btn" id="btnPost">Login</button>
         </div>
-    </div>
+    </form>
 </body>
 
 </html>

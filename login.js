@@ -1,5 +1,5 @@
 // show password
-const show = document.getElementById("clicky").addEventListener("click", () => {
+document.getElementById("clicky").addEventListener("click", () => {
   var val = document.getElementById("pass");
   if (val.type == "password") {
     val.type = "text";
@@ -7,9 +7,3 @@ const show = document.getElementById("clicky").addEventListener("click", () => {
     val.type = "password";
   }
 });
-
-// login button
-const button = document.querySelector('#btnPost');
-button.addEventListener('click', () => {
-    
-})
