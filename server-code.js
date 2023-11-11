@@ -11,12 +11,21 @@ app.use((req, res, next) => {
 
 app.use(parser.urlencoded({extended: true}));
 
+
+
 app.post('/', (req, res) => {
   var username = req.body.user;
   var password = req.body.pass; 
+  var array = [{
+    'jared':'abc123',
+    'oliverio':'def456',
+    'admin':'tcc123',
+    'student':'123zxc',
+    'user':'987cba'
+  }];
 
     if (username == 'jared' && password == 'abc123') {
-      res.sendFile(path.join(__dirname, "../page2", "matches.html"));
+      res.sendFile(path.join(__dirname, "./page2", "matches.html"));
     }
   });
 
