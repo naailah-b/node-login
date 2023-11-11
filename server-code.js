@@ -1,5 +1,6 @@
 var express = require('express');
 var parser = require('body-parser');
+var path = require('path');
 var app = express();
 
 app.use((req, res, next) => {
@@ -14,10 +15,10 @@ app.post('/', (req, res) => {
   var username = req.body.user;
   var password = req.body.pass; 
 
-  if (username == 'jared' && password == 'abc123') {
-    res.redirect('./matches.html');
-  }
-});
+    if (username == 'jared' && password == 'abc123') {
+      res.sendFile(path.join(__dirname, "../page2", "matches.html"));
+    }
+  });
 
 app.listen(4000, () => {
   console.log('listening');
